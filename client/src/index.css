@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  --federal-blue: #03045eff;
+  --marian-blue: #023e8aff;
+  --honolulu-blue: #0077b6ff;
+  --blue-green: #0096c7ff;
+  --pacific-cyan: #00b4d8ff;
+  --vivid-sky-blue: #48cae4ff;
+  --non-photo-blue: #90e0efff;
+  --non-photo-blue-2: #ade8f4ff;
+  --light-cyan: #caf0f8ff;
+  /*  */
+  --primary-color: var(--honolulu-blue);
+  --secondary-color: var(--blue-green);
+  --accent-color: var(--pacific-cyan);
+  --background-light: var(--light-cyan);
+  --background-dark: var(--federal-blue);
+  --text-light: var(--light-cyan);
+  --text-dark: var(--federal-blue);
+  color: var(--text-dark);
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  /* background-color: var(--background-dark); */
+
+}
+
+.section {
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  border: 0 solid #e5e7eb;
+  --chart-1: 12 76% 61%;
+  --chart-2: 173 58% 39%;
+  --chart-3: 197 37% 24%;
+  --chart-4: 43 74% 66%;
+  --chart-5: 27 87% 67%;
+  /* #9333EA */
+  --chart-6: 255 255 255;
+  --chart-7: 0 0 0;
+  /* color: hsl(); */
+  /* color: #d5f4ff; */
+  --tw-bg-opacity: 1;
+  /* background-color: rgb(51, 194, 234); */
+}
+
+body {
+  font-family: DM Sans, sans-serif;
+  font-style: normal;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book_container {
+  width: 250px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 25%);
+}
+
+.book_img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.book_name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.book_author {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.book_price {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.book_price>span {
+  color: #21a700;
+}
+
+.buy_btn {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #f4d072;
+  margin-top: 10px;
+}
