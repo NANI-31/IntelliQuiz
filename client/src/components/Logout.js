@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import useUserActions from "../hooks/useREduxActions";
+import useUserActions from "../hooks/useReduxActions";
 import { useEffect } from "react";
 import { persistor } from "../redux/store";
 import { useNavigate } from "react-router-dom";
