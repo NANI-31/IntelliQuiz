@@ -3,7 +3,7 @@ import Hero from "./pages/Hero";
 import PrivacyPolicy from "./components/hero/PrivacyPolicy";
 import TandC from "./components/hero/TandC";
 import Signin from "./pages/Signin";
-import Logout from "./components/logout";
+import Logout from "./components/Logout";
 
 import SidebarLayout from "./components/SidebarLayout";
 import Quiz from "./pages/Quiz";

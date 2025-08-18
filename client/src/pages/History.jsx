@@ -14,20 +14,23 @@ export default function History() {
   const [searchText, setSearchText] = useState("");
   const [dateFrom, setDateFrom] = useState("");
   const [dateTo, setDateTo] = useState("");
-  const filteredQuizzes = user.quizzes.filter((quiz) => {
-    const quizDate = new Date(quiz.createdAt); // Assumes each quiz has createdAt
+  const filteredQuizzes = user.quizzes
+    .slice()
+    .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+    .filter((quiz) => {
+      const quizDate = new Date(quiz.createdAt); // Assumes each quiz has createdAt
 
-    // Search filter
-    const matchesSearch = quiz.prompt
-      .toLowerCase()
-      .includes(searchText.toLowerCase());
+      // Search filter
+      const matchesSearch = quiz.prompt
+        .toLowerCase()
+        .includes(searchText.toLowerCase());
 
-    // Date filters
-    const fromDateOk = dateFrom ? quizDate >= new Date(dateFrom) : true;
-    const toDateOk = dateTo ? quizDate <= new Date(dateTo) : true;
+      // Date filters
+      const fromDateOk = dateFrom ? quizDate >= new Date(dateFrom) : true;
+      const toDateOk = dateTo ? quizDate <= new Date(dateTo) : true;
 
-    return matchesSearch && fromDateOk && toDateOk;
-  });
+      return matchesSearch && fromDateOk && toDateOk;
+    });
   return (
     <div className="w-full bg-gradient-to-br from-white via-[var(--non-photo-blue-2)] to-white">
       <div className="w-full sm:w-[80%] mx-auto h-full sm:p-10 p-4">
