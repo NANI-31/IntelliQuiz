@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "../hooks/axiosConfig";
 import { useSelector } from "react-redux";
-import useUserActions from "../hooks/useREduxActions";
+import useUserActions from "../hooks/useReduxActions";
 
 import QuizPrompt from "../components/quiz/QuizPrompt";
 import QuizInterface from "../components/quiz/QuizInterface";
