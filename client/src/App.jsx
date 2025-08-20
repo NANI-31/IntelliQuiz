@@ -9,7 +9,7 @@ import SidebarLayout from "./components/SidebarLayout";
 import Quiz from "./pages/Quiz";
 import History from "./pages/History";
 import QuizPrompt from "./components/quiz/QuizPrompt";
-import Payment from "./pages/Payment";
+import Pricing from "./components/hero/Pricing";
 
 export default function App() {
   return (
@@ -21,7 +21,7 @@ export default function App() {
             <Route path="/generate" element={<QuizPrompt />} />
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/history" element={<History />} />
-            <Route path="/payment" element={<Payment />} />
+            <Route path="/pricing" element={<Pricing />} />
           </Route>
           {/* <Route path="/" element={<Sidebar />} /> */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

@@ -5,6 +5,7 @@ const { OAuth2Client } = require("google-auth-library");
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
 exports.google = async (req, res) => {
+  console.log("Google auth request received");
   const { token } = req.body;
 
   try {

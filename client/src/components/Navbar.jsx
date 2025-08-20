@@ -3,11 +3,11 @@ export default function Navbar() {
   const navigate = useNavigate();
   return (
     <nav className="w-[90%] mx-auto bg-brand-dark">
-      <div className="flex justify-between items-center py-4">
+      <div className="flex items-center justify-between py-4">
         <h1 className="text-3xl font-bold text-[var(--secondary-color)]">
-          quizzify
+          IntelliQuiz
         </h1>
-        <ul className="hidden sm:flex gap-6 text-black">
+        <ul className="hidden gap-6 text-black sm:flex">
           {["Features", "How It Works", "Pricing"].map((item) => (
             <li key={item}>
               <a

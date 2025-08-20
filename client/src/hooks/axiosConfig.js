@@ -1,7 +1,8 @@
 import axios from "axios";
 // const BASE_URL = "http://192.168.29.27:5000";
-const BASE_URL = "http://localhost:5000";
-// const BASE_URL = "https://ticklist-server.onrender.com";
+// const BASE_URL = "http://localhost:5000";
+// const BASE_URL = "https://93e6131ddd2f.ngrok-free.app";
+const BASE_URL = "https://intelliquiz-server.onrender.com";
 
 export default axios.create({
   baseURL: BASE_URL,

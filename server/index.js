@@ -8,7 +8,8 @@ require("./config/db");
 const allowedOrigins = [
   "http://localhost:5173",
   "http://192.168.29.27:5173",
-  "https://ticklist.onrender.com",
+  "https://intelliquiz-3b64.onrender.com",
+  "https://93e6131ddd2f.ngrok-free.app",
 ];
 app.use(
   cors({

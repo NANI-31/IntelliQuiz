@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Payment = () => {
+const Pricing = () => {
   const [orderId, setOrderId] = useState(null);
 
   const loadRazorpayScript = () => {
@@ -92,9 +92,9 @@ const Payment = () => {
 
   return (
     <div>
-      <button onClick={handlePayment}>Pay with Razorpay</button>
+      {/* <button onClick={handlePayment}>Pay with Razorpay</button> */}
     </div>
   );
 };
 
-export default Payment;
+export default Pricing;

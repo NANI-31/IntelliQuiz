@@ -103,7 +103,7 @@ export default function Hero() {
             <div className="mt-10">
               <div className="flex flex-col items-center gap-2">
                 <div className="w-full text-center">
-                  <div className="text-xl font-bold">quizzify</div>
+                  <div className="text-xl font-bold">IntelliQuiz</div>
                   <div className="my-1 text-sm text-gray-600">
                     Copyright © 2025 - All rights reserved
                   </div>
